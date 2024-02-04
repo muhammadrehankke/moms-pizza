@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/custom.min.css">
+    <title>moms-pizza</title>
+</head>
+<body>
+    <div class="preloader">
+        <img src="images/logo.png" alt="img">
+    </div>
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="shape-overlays__path"></path>
+        <path class="shape-overlays__path"></path>
+        <path class="shape-overlays__path"></path>
+    </svg>
+
+    <header>
+        <div class="main-navigate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-8 col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+    
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item <?= ($activePage == 'index') ? 'active' : ''; ?>">
+                                        <a class="nav-link" href="index.php">Home </a>
+                                    </li>
+                                    <li class="nav-item <?= ($activePage == 'about') ? 'active' : ''; ?>">
+                                        <a class="nav-link" href="about.php">About</a>
+                                    </li>
+                                    <li class="nav-item <?= ($activePage == 'menuss') ? 'active' : ''; ?>">
+                                        <a class="nav-link" href="menuss.php">Menu</a>
+                                    </li>
+                                    <li class="nav-item <?= ($activePage == 'catering') ? 'active' : ''; ?>">
+                                        <a class="nav-link" href="catering.php">Catering</a>
+                                    </li>
+                                    <li class="nav-item <?= ($activePage == 'moms-market') ? 'active' : ''; ?>">
+                                        <a class="nav-link pr-5" href="moms-market.php"> Mom’s Market</a>
+                                    </li>
+                                    <div class="cn-logo">
+                                        <a href="index.php" class="navbar-brand">
+                                            <img src="images/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <li class="nav-item <?= ($activePage == 'shop') ? 'active' : ''; ?>">
+                                        <a class="nav-link" href="shop.php"> Shop</a>
+                                    </li>
+                                    <li class="nav-item <?= ($activePage == 'chef') ? 'active' : ''; ?>">
+                                        <a class="nav-link" href="chef.php"> Chef’s special</a>
+                                    </li>
+                                    <li class="nav-item <?= ($activePage == 'contact') ? 'active' : ''; ?>">
+                                        <a class="nav-link" href="contact.php"> Contact</a>
+                                    </li>
+    
+    
+                                </ul>
+                                <div class="header-info">
+                                    <div class="d-flex align-items-center">
+                                        <span>
+                                            <img src="images/phone.png" class="img-fluid lazyload" alt="phone">
+                                        </span>
+                                        <span>
+                                            <h5>Call Us now</h5>
+                                            <a href="">000 123 456 789</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header id="mobile-menu">
+        <div class="container">
+        <div class="lgoo">
+             <img src="images/logo.png" class="img-fluid" alt="">
+         </div>
+       <nav class="menu--right" role="navigation">
+         <div class="menuToggle">
+           <input type="checkbox"/>
+           <span></span>
+           <span></span>
+           <span></span>
+           <ul class="menuItem">
+             <li><a href="index.php">Home</a></li>
+             <li><a href="about.php">About</a></li>
+             <li><a href="menuss.php">Menu</a></li>
+             <li><a href="catering.php">Catering</a></li>
+             <li><a href="moms-market.php">Mom’s Market</a></li>
+             <li><a href="shop.php">Shop</a></li>
+             <li><a href="chef.php">Chef’s special</a></li>
+             <li><a href="contact.php">Contact</a></li>
+           </ul>
+         </div>
+       </nav>
+        </div>
+     </header>
+
+    <section class="custom-slider">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img alt="" src="images/banner.png">
+                    <div class="sliderItem">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="slider-content text-body">
+                                        <div class="text-holder">
+                                            <h4>Welcome To</h4>
+                                            <h2>MOM’S</h2>
+                                            <h3>Pizza & Pashta</h3>
+                                        </div>
+                                        <div class="banner-btn">
+                                            <a href="" class="btn">ORDER NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner imm -->
+        <div class="bottom-line">
+            <img src="images/bottomline.png" class="img-fluid" alt="">
+        </div>
+        <div class="banner-img">
+            <img src="images/bannerimg.png" class="img-fluid" alt="">
+        </div>
+        <div class="leefs">
+            <img src="images/lps1.png" class="img-fluid" alt="">
+        </div>
+        <div class="leefs-two">
+            <img src="images/lps2.png" class="img-fluid" alt="">
+        </div>
+        <div class="chili">
+            <img src="images/chili.png" class="img-fluid" alt="">
+        </div>
+        <div class="toamto">
+            <img src="images/tomato.png" class="img-fluid" alt="">
+        </div>
+        <div class="piza">
+            <img src="images/pizza.png" class="img-fluid" alt="">
+        </div>
+        <!-- banner imm -->
+    </section>
+
+    <section class="top-recipe">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="primary-heading">
+                            <h4 data-aos="fade-up" data-aos-delay="150">Top</h4>
+                            <h2 data-aos="fade-up" data-aos-delay="230">Recipes</h2>
+                            <p data-aos="fade-up" data-aos-delay="270">Award-winning pizzas and pasta featuring our signature pizza dough, fermented for<br>
+                                72 hours until built to perfection.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="recipe-img">
+                            <figure>
+                                <img src="images/recipe.png" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="recipe-content">
+                            <article>
+                                <h2 data-aos="fade-left" data-aos-delay="150">MOM'S PIZZA IS<br>
+                                    ALWAYS THE BEST!</h2>
+                                <p data-aos="fade-left" data-aos-delay="240">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a
+                                    type specimen book. </p>
+                                <p data-aos="fade-left" data-aos-delay="340">It has survived not only five centuries, but also the leap into
+                                    electronic typesetting, remaining essentially unchanged.
+                                    It was popularised in the 1960s with the release of Letraset
+                                    sheets containing Lorem Ipsum passages, </p>
+                                <a href="" class="btn">ORDER NOW</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-sec">
+        <div class="menubg">
+            <img src="images/menubg.png" class="img-fluid" alt="">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="primary-heading">
+                        <h2>Menu</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="menu-box">
+                                <div class="menu-img">
+                                    <figure>
+                                        <img src="images/m1.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                                <div class="menu-content">
+                                    <article>
+                                        <h4>Product Name 01</h4>
+                                        <img src="images/stars.png" class="img-fluid" alt="">
+                                        <p>Lorem Ipsum is simply dummy
+                                            text of the printing and typeset
+                                            ting industry.</p>
+                                        <span>00.00$</span>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="menu-box">
+                                <div class="menu-img">
+                                    <figure>
+                                        <img src="images/m2.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                                <div class="menu-content">
+                                    <article>
+                                        <h4>Product Name 02</h4>
+                                        <img src="images/stars.png" class="img-fluid" alt="">
+                                        <p>Lorem Ipsum is simply dummy
+                                            text of the printing and typeset
+                                            ting industry.</p>
+                                        <span>00.00$</span>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="menu-box">
+                                <div class="menu-img">
+                                    <figure>
+                                        <img src="images/m3.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                                <div class="menu-content">
+                                    <article>
+                                        <h4>Product Name 03</h4>
+                                        <img src="images/stars.png" class="img-fluid" alt="">
+                                        <p>Lorem Ipsum is simply dummy
+                                            text of the printing and typeset
+                                            ting industry.</p>
+                                        <span>00.00$</span>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="menu-box">
+                                <div class="menu-img">
+                                    <figure>
+                                        <img src="images/m4.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                                <div class="menu-content">
+                                    <article>
+                                        <h4>Product Name 04</h4>
+                                        <img src="images/stars.png" class="img-fluid" alt="">
+                                        <p>Lorem Ipsum is simply dummy
+                                            text of the printing and typeset
+                                            ting industry.</p>
+                                        <span>00.00$</span>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="menu-box">
+                                <div class="menu-img">
+                                    <figure>
+                                        <img src="images/m1.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                                <div class="menu-content">
+                                    <article>
+                                        <h4>Product Name 05</h4>
+                                        <img src="images/stars.png" class="img-fluid" alt="">
+                                        <p>Lorem Ipsum is simply dummy
+                                            text of the printing and typeset
+                                            ting industry.</p>
+                                        <span>00.00$</span>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-btn">
+                <a href="" class="btn">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-sec">
+        <div class="book-bg">
+            <img src="images/bookbg.png" class="img-fluid" alt="">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="book-content">
+                        <article>
+                            <h5 data-aos="fade-up" data-aos-delay="130">Large Party Booking</h5>
+                            <h2 data-aos="fade-up" data-aos-delay="200">Book Your<br>
+                                Next Party At Mom's</h2>
+                            <p data-aos="fade-up" data-aos-delay="300">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book.</p>
+                            <div class="d-flex align-items-center info-about mt-2" data-aos="fade-up" data-aos-delay="350">
+                                <span>
+                                    <a href="" class="btn">ORDER NOW</a>
+                                </span>
+                                <div class="d-flex align-items-center ml-4">
+                                    <span>
+                                        <img src="images/phone.png" class="img-fluid" alt="">
+                                    </span>
+                                    <span class="pl-1">
+                                        <a href="">
+                                            <h6>CALL US NOW</h6>
+                                        </a>
+                                        <a href="">
+                                            <h4>+123 456 7890</h4>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="book-img">
+                        <figure>
+                            <img src="images/book-img.png" class="img-fluid" alt="">
+                        </figure>
+                        <div class="book-arrow">
+                            <figure>
+                                <img src="images/arrow.png" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-sec">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="video-img">
+                    <figure>
+                        <img src="images/videoban.png" class="img-fluid" alt="">
+                    </figure>
+                    <div class="video-overlay">
+                        <img src="images/play.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-sec">
+        <div class="tstbg">
+            <img src="images/testbg.png" class="img-fluid" alt="">
+        </div>
+        <div class="testimg">
+            <img src="images/testimg.png" class="img-fluid" alt="">
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <div class="primary-heading">
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-lg-9">
+                    <div class="testi-wrapper owl-carousel owl-theme">
+                        <div class="testimonial-item item">
+                            <div class="testi-box">
+                                <figure>
+                                    <img src="images/testi.png" class="lazyload" alt="image">
+                                </figure>
+                                <h6>Alexena le</h6>
+                                <p>“There are many variations of passages Lorem Ipsum available, suffered alteration in some form, by injected There are many variations of passages Lorem Ipsum available, injected ”</p>
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-item item">
+                            <div class="testi-box">
+                                <figure>
+                                    <img src="images/testi.png" class="lazyload" alt="image">
+                                </figure>
+                                <h6>Alexena le</h6>
+                                <p>“There are many variations of passages Lorem Ipsum available, suffered alteration in some form, by injected There are many variations of passages Lorem Ipsum available, injected ”</p>
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-item item">
+                            <div class="testi-box">
+                                <figure>
+                                    <img src="images/testi.png" class="lazyload" alt="image">
+                                </figure>
+                                <h6>Alexena le</h6>
+                                <p>“There are many variations of passages Lorem Ipsum available, suffered alteration in some form, by injected There are many variations of passages Lorem Ipsum available, injected ”</p>
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-item item">
+                            <div class="testi-box">
+                                <figure>
+                                    <img src="images/testi.png" class="lazyload" alt="image">
+                                </figure>
+                                <h6>Alexena le</h6>
+                                <p>“There are many variations of passages Lorem Ipsum available, suffered alteration in some form, by injected There are many variations of passages Lorem Ipsum available, injected ”</p>
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="testimonial-item item">
+                            <div class="testi-box">
+                                <figure>
+                                    <img src="images/testi.png" class="lazyload" alt="image">
+                                </figure>
+                                <h6>Alexena le</h6>
+                                <p>“There are many variations of passages Lorem Ipsum available, suffered alteration in some form, by injected There are many variations of passages Lorem Ipsum available, injected ”</p>
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chef-sec">
+        <div class="chef-leefs">
+            <img src="images/lefs.png" class="img-fluid" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="primary-heading">
+                        <h2 data-aos="fade-up" data-aos-delay="140">Chef’s</h2>
+                        <h5 data-aos="fade-up" data-aos-delay="210">Special</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="cheef-content">
+                        <article>
+                            <h2>For Every Special<br>
+                                Occasion There’s Heritaste</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a
+                                type specimen book.</p>
+                            <p>It has survived not only five centuries, but also the leap into
+                                electronic typesetting, remaining essentially unchanged.</p>
+                            <a href="" class="btn">Read More</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <div class="primary-heading">
+                    <h2>Shop</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="product-item">
+                        <figure> <img src="images/shape1.png" alt="" class="w-100">
+                            <h5>Product Name 01</h5>
+                            <span>$00.00</span>
+                            <ul class="prdt-star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                           </ul>
+                        </figure>
+                        <div class="product-overly">
+                            <img src="images/p1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="product-item">
+                        <figure> <img src="images/shape1.png" alt="" class="w-100">
+                            <h5>Product Name 01</h5>
+                            <span>$00.00</span>
+                            <ul class="prdt-star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                           </ul>
+                        </figure>
+                        <div class="product-overly">
+                            <img src="images/p2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="product-item">
+                        <figure> <img src="images/shape1.png" alt="" class="w-100">
+                            <h5>Product Name 01</h5>
+                            <span>$00.00</span>
+                            <ul class="prdt-star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                           </ul>
+                        </figure>
+                        <div class="product-overly">
+                            <img src="images/p3.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="product-item">
+                        <figure> <img src="images/shape1.png" alt="" class="w-100">
+                            <h5>Product Name 01</h5>
+                            <span>$00.00</span>
+                            <ul class="prdt-star">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                           </ul>
+                        </figure>
+                        <div class="product-overly">
+                            <img src="images/p4.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center mt-5" data-aos="fade-right">
+                    <a href="" class="btn">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.png" class="img-fluid" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-details">
+                        <h5>Contact Detail</h5>
+                        <p><i class="fas fa-map-marker-alt mr-3"></i>Your Street Location,
+                            City USA</p>
+                        <a href="#"><i class="fas fa-phone-volume mr-3"></i>123 456 7890</a>
+                        <a href="#"><i class="fas fa-envelope-open mr-3"></i>info@restaurant.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="text-center mt-0">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry. Lorem <br>
+                        Ipsum has been the industry's </p>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h5>Quick Link</h5>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Menu</a></li>
+                            <li><a href="">Catering</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-food">
+            <img src="images/footershape.png" class="img-fluid" alt="">
+        </div>
+    </footer>
+    
+    <section class="copysec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>© Copyright 2024 Domain Name. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+<script src="js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+<script src="js/pre.js"></script>
+<script src="js/jsap.js"></script>
+<script src="js/custom.js"></script>
+</html>
